@@ -1,10 +1,9 @@
-import React from "react";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import PropTypes from 'prop-types';
 
 export const AddCategory = ( { setCategories } ) => {
 
-  const [inputValue, setInputValue] = useState('')
+  const [inputValue, setInputValue] = useState('');
 
   // sirve para que, al momento de escribir en el input se pueda setear el valor de este(evento) en el inputValue(valor del hook)
   const handleInputChange = ( event ) => {
